@@ -365,7 +365,7 @@ app.post('/', (req, res) => {
 
 
 //testing on 3021
-app.listen(3025, () =>
+app.listen(process.env.PORT ||  3025, () =>
   console.log('Example app listening on port 3025!'),
 );
 process.on('uncaughtException', function(err) {
